@@ -113,7 +113,7 @@ class SearchViewController: UITableViewController, UISearchBarDelegate {
     
     func makeIndicator(view: UIView){
         ActivityIndicator = UIActivityIndicatorView()
-        ActivityIndicator.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        ActivityIndicator.style = .large
         ActivityIndicator.center = view.center
         ActivityIndicator.hidesWhenStopped = true
         view.addSubview(ActivityIndicator)
